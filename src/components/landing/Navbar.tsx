@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const Navbar = () => {
   return (
     <header className="bg-white fixed z-50 w-full border-b border-gray-100">
-      <div className="container mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         <nav className="flex items-center justify-between h-20 px-4 md:px-6">
           {/* Logo */}
           <Link
