@@ -1,12 +1,13 @@
+
 export const CTASection = () => {
   return (
     <section className="bg-[rgba(255,233,227,1)] z-0 flex w-full items-center gap-[40px_48px] justify-center flex-wrap px-64 py-40 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
       <div className="self-stretch flex min-w-60 flex-col items-stretch justify-center flex-1 shrink basis-[0%] my-auto max-md:max-w-full">
         <div className="w-full max-md:max-w-full">
-          <h2 className="text-[80px] font-extrabold tracking-[-0.8px] bg-clip-text bg-[linear-gradient(90deg,var(--1000x-On-Surface,#271813)_22.05%,var(--1000x-Primary,#AA3700)_76.53%)] max-md:max-w-full max-md:text-[40px]">
+          <h2 className="text-[72px] leading-[1.1] font-extrabold tracking-[-0.8px] bg-clip-text bg-[linear-gradient(90deg,var(--1000x-On-Surface,#271813)_22.05%,var(--1000x-Primary,#AA3700)_76.53%)] max-md:max-w-full max-md:text-[40px]">
             Get your chance to Win Mega rewards now
           </h2>
-          <p className="text-[rgba(91,65,56,1)] text-lg font-medium leading-none tracking-[0.18px] mt-[34px] max-md:max-w-full">
+          <p className="text-[rgba(91,65,56,1)] text-lg font-medium leading-normal tracking-[0.18px] mt-6 max-md:max-w-full">
             Don't Miss Out on the Future of Lotteries. Be Among the First to
             Play 1000xrewards.
           </p>
