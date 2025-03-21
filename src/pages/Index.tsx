@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { TrustedBySection } from "@/components/landing/TrustedBySection";
@@ -10,9 +11,9 @@ import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="justify-center items-stretch bg-white relative flex flex-col overflow-hidden rounded-[18px]">
+    <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
-      <main>
+      <main className="flex-1 pt-20">
         <HeroSection />
         <TrustedBySection />
         <FeaturesSection />

@@ -1,79 +1,75 @@
+
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (
-    <header className="bg-white fixed z-50 w-full">
-      <nav className="flex min-h-[72px] items-center gap-[40px_100px] text-sm font-medium whitespace-nowrap tracking-[0.1px] leading-none justify-between flex-wrap h-[72px] px-7 py-4 max-md:max-w-full max-md:px-5">
-        <Link
-          to="/"
-          className="self-stretch flex min-w-60 min-h-9 items-center gap-1 text-[27px] text-[rgba(170,55,0,1)] font-bold tracking-[-1.08px] leading-none my-auto"
-        >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/b50fe682d4084777a8c814359725a696/c1cc0aa78e5a342af12ab57ed52ffe6c3974c6d7?placeholderIfAbsent=true"
-            className="aspect-[1] object-contain w-9 self-stretch shrink-0 my-auto"
-            alt="1000XRewards Logo"
-          />
-          <span className="self-stretch w-[209px] my-auto">1000XRewards</span>
-        </Link>
-
-        <div className="self-stretch flex min-w-60 gap-[34px] text-[#271813] text-center my-auto max-md:max-w-full">
+    <header className="bg-white fixed z-50 w-full border-b border-gray-100">
+      <div className="container mx-auto">
+        <nav className="flex items-center justify-between h-20 px-4 md:px-6">
+          {/* Logo */}
           <Link
             to="/"
-            className="flex min-h-10 flex-col overflow-hidden items-stretch text-[#AA3700] justify-center w-16 rounded-[100px]"
+            className="flex items-center gap-2 text-[#AA3700] font-bold text-2xl"
           >
-            <div className="self-stretch w-full gap-2 flex-1 h-full px-3 py-2.5">
-              Home
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/b50fe682d4084777a8c814359725a696/c1cc0aa78e5a342af12ab57ed52ffe6c3974c6d7?placeholderIfAbsent=true"
+              className="w-8 h-8"
+              alt="1000XRewards Logo"
+            />
+            <span>1000XRewards</span>
           </Link>
-          <Link
-            to="/about"
-            className="flex min-h-10 flex-col overflow-hidden items-stretch justify-center w-[65px] rounded-[100px]"
-          >
-            <div className="flex w-full items-center gap-2 justify-center flex-1 h-full px-3 py-2.5">
-              <span className="opacity-[0.38] self-stretch my-auto">About</span>
-            </div>
-          </Link>
-          <Link
-            to="/help"
-            className="flex min-h-10 flex-col overflow-hidden items-stretch justify-center w-14 rounded-[100px]"
-          >
-            <div className="flex w-full items-center gap-2 justify-center flex-1 h-full px-3 py-2.5">
-              <span className="opacity-[0.38] self-stretch my-auto">Help</span>
-            </div>
-          </Link>
-          <Link
-            to="/contact"
-            className="flex min-h-10 flex-col overflow-hidden items-stretch justify-center w-[79px] rounded-[100px]"
-          >
-            <div className="flex w-full items-center gap-2 justify-center flex-1 h-full px-3 py-2.5">
-              <span className="opacity-[0.38] self-stretch my-auto">
-                Contact
-              </span>
-            </div>
-          </Link>
-          <Link
-            to="/legal"
-            className="flex min-h-10 flex-col overflow-hidden items-stretch justify-center w-[61px] rounded-[100px]"
-          >
-            <div className="flex w-full items-center gap-2 justify-center flex-1 h-full px-3 py-2.5">
-              <span className="opacity-[0.38] self-stretch my-auto">Legal</span>
-            </div>
-          </Link>
-        </div>
 
-        <div className="self-stretch flex items-center gap-2 text-center my-auto">
-          <button className="border self-stretch flex min-h-10 flex-col overflow-hidden items-stretch text-[#AA3700] justify-center w-[86px] my-auto rounded-[100px] border-[rgba(142,112,103,1)] border-solid">
-            <div className="self-stretch w-full gap-2 flex-1 h-full px-6 py-2.5 max-md:px-5">
+          {/* Navigation Links */}
+          <div className="hidden md:flex items-center justify-center space-x-8">
+            <Link
+              to="/"
+              className="text-[#AA3700] font-medium"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-500 hover:text-[#AA3700] transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              to="/help"
+              className="text-gray-500 hover:text-[#AA3700] transition-colors"
+            >
+              Help
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-500 hover:text-[#AA3700] transition-colors"
+            >
+              Contact
+            </Link>
+            <Link
+              to="/legal"
+              className="text-gray-500 hover:text-[#AA3700] transition-colors"
+            >
+              Legal
+            </Link>
+          </div>
+
+          {/* Auth Buttons */}
+          <div className="flex items-center gap-3">
+            <Button 
+              variant="outline" 
+              className="rounded-full border-[#AA3700] text-[#AA3700] hover:bg-[#AA3700]/5"
+            >
               Login
-            </div>
-          </button>
-          <button className="bg-[rgba(170,55,0,1)] self-stretch flex min-h-10 flex-col overflow-hidden items-stretch text-white justify-center w-[97px] my-auto rounded-[100px]">
-            <div className="self-stretch w-full gap-2 flex-1 h-full px-6 py-2.5 max-md:px-5">
+            </Button>
+            <Button 
+              className="rounded-full bg-[#AA3700] text-white hover:bg-[#AA3700]/90"
+            >
               Register
-            </div>
-          </button>
-        </div>
-      </nav>
+            </Button>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };
