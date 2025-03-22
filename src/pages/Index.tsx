@@ -14,13 +14,17 @@ const Index = () => {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
       <main className="flex-1 pt-20">
-        <HeroSection />
-        <TrustedBySection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <PaymentMethodsSection />
+        <div className="mx-auto max-w-[1440px]">
+          <HeroSection />
+          <TrustedBySection />
+          <FeaturesSection />
+          <HowItWorksSection />
+          <PaymentMethodsSection />
+        </div>
         <FAQSection />
-        <CTASection />
+        <div className="mx-auto max-w-[1440px]">
+          <CTASection />
+        </div>
       </main>
       <Footer />
     </div>
