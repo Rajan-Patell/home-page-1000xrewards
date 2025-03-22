@@ -1,5 +1,5 @@
 export const HeroSection = () => {
-  return <section className="z-0 flex w-full gap-[40px_48px] flex-wrap pt-[260px] pb-60 max-md:max-w-full px-[24px] py-[240px]">
+  return <section className="z-0 flex w-full gap-[40px_48px] flex-wrap pt-[260px] pb-60 max-md:max-w-full px-[24px] py-[24px]">
       <div className="min-w-80 flex-1 shrink basis-[0%] max-w-[1128px] p-4 max-md:max-w-full">
         <div className="w-full max-md:max-w-full">
           <h1 className="text-[84px] font-bold leading-[90px] tracking-[-1.68px] max-md:max-w-full max-md:text-[40px] max-md:leading-[47px]">
