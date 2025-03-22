@@ -1,6 +1,5 @@
 export const HeroSection = () => {
-  return (
-    <section className="z-0 flex w-full gap-[40px_48px] flex-wrap pt-[260px] pb-60 px-60 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+  return <section className="z-0 flex w-full gap-[40px_48px] flex-wrap pt-[260px] pb-60 max-md:max-w-full px-[24px] py-[240px]">
       <div className="min-w-80 flex-1 shrink basis-[0%] max-w-[1128px] p-4 max-md:max-w-full">
         <div className="w-full max-md:max-w-full">
           <h1 className="text-[84px] font-bold leading-[90px] tracking-[-1.68px] max-md:max-w-full max-md:text-[40px] max-md:leading-[47px]">
@@ -20,12 +19,7 @@ export const HeroSection = () => {
         </button>
       </div>
       <div className="flex min-w-60 gap-2.5 justify-center w-[494px] max-md:max-w-full">
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/b50fe682d4084777a8c814359725a696/4152792ca87ee3167fea85b5d3b02f700dde8d49?placeholderIfAbsent=true"
-          alt="Coin Illustration"
-          className="aspect-[0.92] object-contain w-full min-w-60 flex-1 shrink basis-[0%] max-md:max-w-full"
-        />
+        <img src="https://cdn.builder.io/api/v1/image/assets/b50fe682d4084777a8c814359725a696/4152792ca87ee3167fea85b5d3b02f700dde8d49?placeholderIfAbsent=true" alt="Coin Illustration" className="aspect-[0.92] object-contain w-full min-w-60 flex-1 shrink basis-[0%] max-md:max-w-full" />
       </div>
-    </section>
-  );
+    </section>;
 };
